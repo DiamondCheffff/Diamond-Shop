@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Diamond Shop — Responsive</title>
+    <style>
+        @font-face {
+          font-family: 'Hasti';
+          src: url('./fonts/HASTI-HEAVY.TTF') format('truetype');
+          font-weight: 700;
+          font-style: normal;
+          font-display: swap;
+        }
+        @font-face {
+          font-family: 'Fedra';
+          src: url('./fonts/FEDRA ARABIC DISPLAY AR+LT BLACK.TTF') format('truetype');
+          font-weight: 700;
+          font-style: normal;
+          font-display: swap;
+        }
+        html,body{height:100%}
+        body{ -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'navy-900': '#04103b',
+                        'diamond-blue': '#2e9cff'
+                    },
+                    fontFamily: {
+                        hasti: ['Hasti', 'system-ui', 'sans-serif'],
+                        fedra: ['Fedra', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-navy-900 min-h-screen flex items-center justify-center p-6">
+<div class="w-full max-w-4xl flex flex-col items-center justify-center gap-8 mx-auto">
+    <div class="flex items-center justify-center w-full">
+        <img src="./logo.jpg" alt="Diamond Shop logo" class="w-44 h-44 md:w-56 md:h-56 lg:w-72 lg:h-72 object-cover rounded-sm shadow-lg mx-auto" />
+    </div>
+    <div class="w-full flex flex-col items-center text-center">
+        <h2 class="clamp-title text-5xl md:text-8xl lg:text-9xl font-extrabold text-white leading-tight mt-10 font-hasti">
+            دایمند شاپ
+        </h2>
+        <h1 class="mt-10 text-3xl md:text-5xl lg:text-6xl font-extrabold text-white font-fedra">
+            Diamond Shop
+        </h1>
+        <div class="mt-10 md:mt-16 flex justify-center w-full">
+            <a href="https://t.me/EtemadDiamond"
+                    class="bg-diamond-blue text-white rounded-full px-10 md:px-16 py-6 md:py-8 shadow-xl transform active:scale-95 focus:outline-none mx-auto"
+                    aria-label="ورود به فروشگاه">
+                <span class="text-3xl md:text-5xl font-black btn-text font-hasti">
+            ورود به فروشگاه
+                </span>
+            </a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
